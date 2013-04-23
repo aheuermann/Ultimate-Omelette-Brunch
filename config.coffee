@@ -14,7 +14,8 @@ exports.config =
         'test/javascripts/test.js': /^test(\/|\\)(?!vendor)/
         'test/javascripts/test-vendor.js': /^test(\/|\\)(?=vendor)/
       order:
-        before: [
+        after: [
+          'vendor/scripts/angular/angular-strap.min.js'
         ]
 
     stylesheets:
