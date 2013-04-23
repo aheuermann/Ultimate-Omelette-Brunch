@@ -1,0 +1,42 @@
+<!doctype html>
+	<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" ng-app="app"> <![endif]-->
+	<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="en" ng-app="app"> <![endif]-->
+	<!--[if IE 8]>    <html class="no-js lt-ie9 ie8" lang="en" ng-app="app"> <![endif]-->
+	<!--[if (gte IE 8)|!(IE)]><!--> <html class="no-js" lang="en" ng-app="app"> <!--<![endif]-->
+	<head>
+		<!-- TITLE & METADATA -->
+		<title>Site Title</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+
+		<script>
+		  window.brunch = window.brunch || {};
+		  window.brunch['auto-reload'] = {disabled: true};
+		</script>
+
+		<!-- CHROME AND VIEWPORT SETTINGS -->
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="imagetoolbar" content="no">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<!-- FAVICON, STYLES & SCRIPTS REQUESTS -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="stylesheets/app.css" />
+	</head>
+	<body>
+		<ul class="menu">
+	    <li><a href="#/view1">view1</a></li>
+	    <li><a href="#/view2">view2</a></li>
+	  </ul>
+	  
+	  <div ng-view></div>
+
+	  <div>Angular seed app: v<span app-version></span></div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+		<script src="javascripts/vendor.js"></script>
+		<script src="javascripts/app.js"></script>
+	</body>
+</html>
