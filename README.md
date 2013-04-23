@@ -10,8 +10,10 @@ Make sure you have coffee-script and brunch installed `[sudo] npm install -g cof
 ## About
 Includes the following:
 
-- Angularjs
-- CoffeeScript
-- Jade
-- Stylus
-- Auto Reload
+- [Angularjs](http://angularjs.org/)
+- [CoffeeScript](http://coffeescript.org/)
+- [Jade](http://jade-lang.com/)
+- [Stylus](http://learnboost.github.io/stylus/)
+- [Auto Reload Brunch](https://github.com/brunch/auto-reload-brunch)
+- [Twitter Bootstrap](http://twitter.github.io/bootstrap/)
+- [Angular Strap](http://mgcrea.github.io/angular-strap/)

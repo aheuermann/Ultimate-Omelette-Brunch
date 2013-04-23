@@ -5,13 +5,13 @@
 	<!--[if (gte IE 8)|!(IE)]><!--> <html class="no-js" lang="en" ng-app="app"> <!--<![endif]-->
 	<head>
 		<!-- TITLE & METADATA -->
-		<title>Site Title</title>
+		<title>Ultimate Omlette Brunch</title>
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 
 		<script>
 		  window.brunch = window.brunch || {};
-		  window.brunch['auto-reload'] = {disabled: true};
+		  window.brunch['auto-reload'] = {disabled: false};
 		</script>
 
 		<!-- CHROME AND VIEWPORT SETTINGS -->
@@ -25,17 +25,26 @@
 		<link rel="stylesheet" href="stylesheets/app.css" />
 	</head>
 	<body>
-		<ul class="menu">
-	    <li><a href="#/view1">view1</a></li>
-	    <li><a href="#/view2">view2</a></li>
-	  </ul>
-	  
-	  <div ng-view></div>
+	  <header class="navbar navbar-fixed-top" bs-navbar>
+		  <div class="navbar-inner">
+		  	<div class="container">
+			  	<a class="brand" href="#">Shiny New App</a>
+			    <ul class="nav">
+			      <li data-match-route="/view1"><a href="#/view1">View One</a></li>
+			      <li data-match-route="/view2"><a href="#/view2">View Two</a></li>
+			    </ul>
+			  </div>
+		 </div>
+		</header>
+		<div class="container">
+	  	<div class="row-fluid" ng-view></div>
+	  	<div>Angular seed app: v<span app-version></span></div>
+	  </div>
 
-	  <div>Angular seed app: v<span app-version></span></div>
-
-
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/0.7.2/angular-strap.min.js"></script>
 		<script src="javascripts/vendor.js"></script>
 		<script src="javascripts/app.js"></script>
 	</body>

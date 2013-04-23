@@ -1,5 +1,6 @@
 # Declare app level module which depends on filters, and services
 angular.module('app', [
+  '$strap.directives'
   'ngCookies'
   'ngResource'
   'app.controllers'
