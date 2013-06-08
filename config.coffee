@@ -1,38 +1,36 @@
 exports.config =
   # See http://brunch.readthedocs.org/en/latest/config.html for documentation.
+  conventions:
+    ignored: /(^vendor\\.*\.less)|(^vendor\/.*\.less)|(^|\/)node_modules\/|(^|\/)_/
+    assets: /^app\/assets\//
+  
   modules:
     definition: false
     wrapper: false
+  
   files:
     javascripts:
       
       defaultExtension: 'js'
       
       joinTo:
-        'javascripts/app.js': /^app/
-        'javascripts/vendor.js': /^vendor/
-        'test/javascripts/test.js': /^test(\/|\\)(?!vendor)/
-        'test/javascripts/test-vendor.js': /^test(\/|\\)(?=vendor)/
-      order:
-        after: [
-          'vendor/scripts/angular/angular-strap.min.js'
-        ]
+        'js/app.js': /^app/
+        'js/vendor.js': /^vendor/
+        'test/js/test.js': /^test(\/|\\)(?!vendor)/
+        'test/js/test-vendor.js': /^test(\/|\\)(?=vendor)/
 
     stylesheets:
       joinTo:
-        'stylesheets/app.css': /^(app|vendor)/
-        'test/stylesheets/test.css': /^test/
-      order:
-        before: [
-          'vendor/styles/bootstrap.css'
-        ]
+        'css/app.css': /^(app|vendor)/
+        'test/css/test.css': /^test/
 
     templates:
-      joinTo: 'javascripts/templates.js'
+      joinTo: 
+        'js/dontUseMe' : /^app/ # dirty hack for Jade compiling.
 
   plugins:
-    stylus:
-      linenos: yes
-      firebug: yes
     jade:
       pretty: yes
+    jade_angular:
+      modules_folder: 'templates'
+      locals: {}

@@ -1,9 +1,3 @@
-/**
- * @license AngularJS v1.0.6
- * (c) 2010-2012 Google, Inc. http://angularjs.org
- * License: MIT
- */
-(function(window, angular, undefined) {
 'use strict';
 
 /**
@@ -145,7 +139,8 @@ angular.module('ngCookies', ['ng']).
          * @returns {Object} Deserialized cookie value.
          */
         get: function(key) {
-          return angular.fromJson($cookies[key]);
+          var value = $cookies[key];
+          return value ? angular.fromJson(value) : value;
         },
 
         /**
@@ -179,6 +174,3 @@ angular.module('ngCookies', ['ng']).
       };
 
     }]);
-
-
-})(window, window.angular);
