@@ -1,7 +1,7 @@
 exports.config =
   # See http://brunch.readthedocs.org/en/latest/config.html for documentation.
   conventions:
-    ignored: /(^vendor\\.*\.less)|(^vendor\/.*\.less)|(^|\/)node_modules\/|(^|\/)_/
+    ignored: /(\/node_modules\/jade-brunch\/vendor.*)|(^vendor\/.*\.less)/
     assets: /^app\/assets\//
   
   modules:
