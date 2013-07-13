@@ -6,6 +6,15 @@
 * { .box-sizing(border-box); }
 
 body {
-  padding-top: 60px;
+  @media (min-width: 979px){
+    padding-top: 60px;
+  }
+}
+
+::selection {
+  background: lighten(@green, 20%);
+}
+::-moz-selection {
+  background: lighten(@green, 20%);
 }
 
