@@ -8,11 +8,11 @@ angular.module('app', [
   'app.filters'
   'app.services'
 ])
-.config([ '$routeProvider', ($routeProvider, $locationProvider, config) ->
+.config(($routeProvider, $locationProvider) ->
   $routeProvider
     .when('/view1', {templateUrl: '/partials/view1.html'})
     .when('/view2', {templateUrl: '/partials/view2.html'})
 
     # Catch all
     .otherwise({redirectTo: '/view1'})
-])
+)
