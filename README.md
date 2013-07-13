@@ -1,6 +1,7 @@
 ## Ultimate Omelette Brunch
 [Brunch](http://brunch.io) skeleton with CoffeeScript, Angularjs, Less, Jade, Bootstrap (Flatly Theme), Angular UI-Bootstrap, and Auto-Reload.
 
+![Screenshot](http://i.imgur.com/XilUHFG.png)
 ## Usage
 Make sure you have coffee-script and brunch installed `[sudo] npm install -g coffee-script brunch`.
 
@@ -19,5 +20,5 @@ Includes the following:
 - [Twitter Bootstrap](http://twitter.github.io/bootstrap/)
 - [Flatly Theme](http://bootswatch.com/flatly/)
 
-![Screenshot](http://i.imgur.com/yKCMCxr.jpg)
+
 
