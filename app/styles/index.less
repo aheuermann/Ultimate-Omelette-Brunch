@@ -3,7 +3,11 @@
 @import "../../vendor/styles/bootstrap/_responsive.less";
 @import "../../vendor/styles/_flatty.less";
 
-* { .box-sizing(border-box); }
+*, *:before, *:after { .box-sizing(border-box); }
+
+input {
+    .box-sizing(content-box);
+}
 
 body {
   @media (min-width: 979px){
