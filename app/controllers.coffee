@@ -4,6 +4,7 @@ angular
     $scope.opts =
       backdrop: true
       keyboard: true
+      dialogFade: true
       backdropClick: true
       templateUrl: '/partials/dialog.html'
       controller: 'DialogCtrl'
