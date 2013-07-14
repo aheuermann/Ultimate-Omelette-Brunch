@@ -6,6 +6,7 @@
 Make sure you have coffee-script and brunch installed `[sudo] npm install -g coffee-script brunch`.
 
     brunch new <project-name> --skeleton https://github.com/aheuermann/Ultimate-Omelette-Brunch.git
+    cd <project-name>
     brunch w -s
 
 ## About
